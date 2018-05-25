@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recherche de matos</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/tuto.css" rel="stylesheet">
+  <!-- Un peu de style pour la visualisation -->
+  <style type="text/css">
+    .col-lg-8 { line-height: 200px; }
+    .col-lg-12 { line-height: 80px; }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="row">
+        <div class="col-md-12">
+          <h1>Mountain's monsters</h1>
+          <img src="logo.png" class=logo alt="logo du site"/>
+          <img src="cloud_snow.png" alt="meteo" id="meteo">
+        </div>
+
+      </header>     
+<div>
+        <div class=container>
+          <div class="row">
+            <div class="col-md-12">
+              <nav>
+            <span class="onglets">
+              <a href="mur.html">mur</a> 
+            </span>
+            <span class="onglets">
+              <a href="recherche.html">recherche</a>
+            </span>
+            <span class="onglets">
+              <a href="profil.html">profil</a>
+            </span>
+            <span class="onglets">
+              <a href="message">message</a>
+            </span>
+            <span class="onglets">
+              <a href="invitations">invitations</a>
+            </span>
+            <span class="onglets">
+              <a href="paramètres">paramètres</a>
+            </span>
+            <span class="onglets">
+              <a href="évènements">évènements</a>
+            </span>
+            <span class="onglets">
+              <a href="troc_matos">troc matos</a>
+            </span>
+            <span class="onglets">
+              <a href="déconnexion">déconnexion</a>
+            </span>
+          </nav>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Rechercher du matos</h2>
+            <div class="recherche">
+             <p>
+               <label for="categories">Catégorie</label><br />
+                 <select name="categories" id="categories">
+                     <option value="ski alpin ou de descente" selected="">ski alpin ou de descente</option>
+                     <option value="snowboard">snowboard</option>
+                     <option value="télémark">télémark</option>
+                     <option value="snowscoot">snowscoot</option>
+                     <option value="patinettes snowblades">patinettes snowblades</option>
+                     <option value="ski de fond">ski de fond</option>
+                     <option value="airboard">airboard</option>
+                     <option value="saut à ski">saut à ski</option>
+                     <option value="Ski acrobatique">Ski acrobatique</option>
+                </select>
+              </p>
+              <p>
+                 <label for="equipement_type">Type d'équipement</label><br />
+                   <select name="equipement_type" id="equipement_type">
+                       <option value="skis tout-terrain">Skis tout-terrain</option>
+                       <option value="skis Freestyles">Skis Freestyles</option>
+                       <option value="skis free-ride">Skis free-ride</option>
+                       <option value="skis alpins">Skis alpins</option>
+                       <option value="skis spéciaux pour débutants">Skis spéciaux pour débutants</option>
+                       <option value="planche large et courte freestyle">Planches freestyle</option>
+                       <option value="planche free-ride">Planches free-ride</option>
+                       <option value="snowboard de poudreuse">Snowboard de poudreuse</option>
+                       <option value="snowboard alpin">Snowboard alpin</option>
+                       <option value="chaussures de ski">Chaussures de ski</option>
+                       <option value="Les casques">Les casques</option>
+                       <option value="Parka">Parka</option>
+                       <option value="Pantalons">Pantalons</option>
+                       <option value="Polaires">Polaires</option>
+                       <option value="Bonnets">Bonnets</option>
+                       <option value="Gants">Gants</option>
+                       <option value="Equipement High Tech">Equipement High Tech</option>
+                    </select>
+              </p>
+              <p>
+                <label for="Département">Département</label><br />
+                  <select name="Département" id="Département">
+                     <option value="Ain (01)">Ain (01)</option>
+                     <option value="Allier (03)">Allier (03)</option>
+                     <option value="Ardèche (07">Ardèche (07</option>
+                     <option value="Cantal (15)">Cantal (15)</option>
+                     <option value="Drôme (26)">Drôme (26)</option>
+                     <option value="Isère (38)">Isère (38)</option>
+                     <option value="Loire (42)">Loire (42)</option>
+                     <option value="Haute-Loire (43)">Haute-Loire (43)</option>
+                     <option value="Puy-de-Dôme (63)">Puy-de-Dôme (63)</option>
+                     <option value="Rhône (69)">Rhône (69)</option>
+                     <option value="Savoie (73">Savoie (73</option>
+                     <option value="Haute-Savoie (74)">Haute-Savoie (74)</option>
+                </select>
+               </p>
+                <p>
+                  Annonces urgentes uniquement 
+                  <input type="checkbox" id="urgent_only" /> 
+               </p>
+               <p>
+                    Prix maximum
+                    <input type="range" min="0" max="1000"/>
+                </p>
+                 
+                <p>
+                   <input type="submit" value="Rechercher"/>
+                </p>
+          </div>
+        </div>
+        
+       
+         <div class="col-md-8">Section
+            
+            <div class="col-md-4">Article</div>
+            
+            <div class="col-md-4">Article</div>
+     
+    
+         </div>
+
+       </div>
+
+
+      
+
+      </div>
+
+      <footer class="row">
+        <div class="col-lg-12">
+          Pied de page
+        </div>
+      </footer>
+
+    </div>
+    </div>
+  </body>
+</html>

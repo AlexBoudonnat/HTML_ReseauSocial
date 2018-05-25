@@ -1,0 +1,119 @@
+#header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image:linear-gradient(white, black);
+    padding-bottom: 10px;
+    height: 180px;
+}
+#meteo
+{ 
+    height: 150px;
+    border-radius: 60px;
+}
+
+body
+{
+
+    background-image: url("../medias/massif-du-mont-blanc.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+
+}
+
+.logo
+{
+    width: 150px;
+}
+
+#inscription  
+{
+    background-image: url("../medias/neige.jpg");
+    background-size: cover;
+    display: flex;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 100px 10px 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 37%;
+    margin-right: 45%;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 20px;
+}
+#form label
+{
+    display: inline-block;
+    width: 150px;
+}
+
+#form input
+{
+    display: inline-block;
+}
+
+/*---------FOOTER-------------*/
+#footer
+{
+    margin-top: 80px;
+    height: 100%;
+    background-image:linear-gradient(rgb(73, 73, 73), white);
+}
+#menu_nav {
+    margin: 1px ;
+    padding-top: 30px ;
+    padding-bottom: 20px; 
+    list-style: none ;
+    text-align: center ;
+}
+#menu_nav li {
+    display: inline ;
+    margin-right: 1px ;
+    color: #fff ;
+}
+#menu_nav li a {
+    padding: 4px 20px ;
+    background: rgb(109, 108, 108) ;
+    color: #fff ;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius: 20px;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+}
+#menu_nav li a:hover, #navigation li a:focus, #navigation li a:active {
+    background: rgb(58, 58, 58) ;
+    text-decoration: underline ;
+  }
+
+/*----------------FOOTER-----------------*/
+
+@media sreen and (max-device-width: 480px) {
+
+    body 
+    {
+        width: auto;
+    }
+    #header
+    {
+        display: none;
+    }
+
+    #footer   
+    {
+        display: none;
+    }
+
+    #inscription  
+    {
+        margin: auto;
+    }
+}

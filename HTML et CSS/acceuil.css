@@ -1,0 +1,316 @@
+h2
+{
+    font-family: Amsterdam Graffiti;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1
+{
+    font-family: Amsterdam Graffiti;
+    font-size: 100px;
+    margin-top: 0px;
+}
+/*---------------HEADER----------------------*/
+
+#header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image:linear-gradient(white, black);
+    padding-bottom: 10px;
+}
+
+#logo
+{
+    width: 150px;
+    height: 150px;
+}
+
+#meteo
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    z-index: 2;
+}
+@keyframes zoom1 {
+	0% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	100% {
+		transform: translate(-120px, 120px) scale(1.5);
+	}
+}
+
+#meteo:hover
+{
+	animation: zoom1 2s;
+	-webkit-animation: zoom1 2s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+/*---------------HEADER----------------------*/
+
+/* ---------------SECTION--------------------- */
+
+#inscription
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /*background-image: url(../medias/extreme_snowboarding.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;*/
+    padding-bottom: 150px;
+}
+
+
+#inscription_module
+{
+   /* background-image: url(../medias/rider_inscription.jpg);
+    background-repeat:no-repeat;*/
+    background-color: rgba(122, 121, 121, 0.5);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    opacity: url(rider_inscription.jpg)0.8;
+    margin-top: 100px;
+    border-radius: 200px;
+}
+
+#float_nom
+{
+    float: left;
+}
+
+#float_prenom
+{
+    float: right; 
+}
+
+#birthday
+{
+    width: 290px;
+}
+
+#bouton
+{
+    font-family: Amsterdam Graffiti;
+    font-size: 35px;
+}
+
+#connexion_module
+{
+    /*background-image: url(../medias/rider_connexion.jpg);
+    background-repeat:no-repeat;*/
+    background-color: rgba(122, 121, 121, 0.5);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    opacity: url(rider_connexion.jpg)0.8;
+    margin-top: -50px;
+    border-radius: 150px;
+    color:  black;
+}
+
+#bouton_connexion
+{
+    text-align: center;
+}
+
+#bouton_inscription
+{
+    text-align: center;
+}
+
+#bouton_inscription input
+{
+    width: 300px;
+}
+
+#bouton_connexion input
+{
+    width: 150px;
+}
+
+#sex_option
+{
+    text-align: center;
+}
+
+#bouton_inscription_tablette
+{
+    display: none;
+}
+
+/*----------------SECTION-----------------*/
+
+/*----------------FOOTER-----------------*/
+
+#footer
+{
+    padding-top: 10px;
+    height: 70%;
+    background-image:linear-gradient(rgb(73, 73, 73), white);
+}
+#menu_nav {
+    margin: 0px ;
+    padding-top: 5px ;
+    list-style: none ;
+    text-align: center ;
+}
+#menu_nav li {
+    display: inline-block;
+    width: 180px;
+    margin-right: 1px ;
+    padding: 4px 0px ;
+    background: rgb(109, 108, 108) ;
+    color: #fff ;
+    border: 1px solid rgb(255, 255, 255) ;
+    border-radius: 20px;
+}
+#menu_nav li a {
+    color: #fff ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ;
+}
+#menu_nav li a:hover, #navigation li a:focus, #navigation li a:active {
+    background: rgb(58, 58, 58) ;
+    text-decoration: underline ;
+}
+
+/*----------------FOOTER-----------------*/
+
+/*--------------MEDIA QUERIES SMARTPHONE-----------*/
+
+@media only screen and (max-width: 1024px)
+{
+    h1
+    {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 0;
+        height: 85px;
+        width: 200px;
+        line-height: 30px;
+    }
+    #header
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        background-image:linear-gradient(white, black);
+        padding-bottom: 0px;
+    }
+    #footer
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-top: 0px;
+    }
+    #menu_nav
+    {
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #menu_nav li
+    {
+        width: 120px;
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 70%;
+    }
+    #menu_nav li a 
+    {
+        margin: 0;
+    }
+    #inscription_module
+    {
+        display: none;
+    }
+    #inscription
+    {
+        padding-bottom: 55px;
+        padding-top: 55px;
+    }
+    #connexion_module
+    {
+        display: 50%;
+    }
+    #logo
+    {
+        width: 65px;
+        height: 65px;
+    }
+    #meteo
+    {
+        width: 65px;
+        height: 65px;
+    }
+        #inscription
+    {
+        background-image: url(../medias/extreme_snowboarding_tablette.jpg);
+        flex-direction: column-reverse;
+    }
+    #connexion_module
+    {
+        /*background-image: url(../medias/rider_connexion.jpg);
+        background-repeat:no-repeat;*/
+        background-color: rgba(122, 121, 121, 0.5);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        opacity: url(rider_connexion.jpg)0.8;
+        margin-top: 0px;
+        border-radius: 150px;
+        color:  black;
+    }
+    h2
+    {
+        font-size: 35px;
+    }
+    #bouton_connexion input
+    {
+        height: 40px;
+        width: 100px;
+    }
+    #bouton
+    {
+        font-family: Amsterdam Graffiti;
+        font-size: 25px;
+    }
+    #bouton_inscription_tablette
+    {
+        display: inline-flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #inscription_tablette
+    {
+        padding-top: 20px;
+        font-family: Amsterdam Graffiti;
+        text-align: center; 
+    }
+}
+/*------------MEDIA QUERIES SMARTPHONE-----------*/
+
+
+

@@ -1,0 +1,59 @@
+body {
+  padding-top: 10px;
+}
+[class*="col-"], footer {
+  
+  border: 2px solid black;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+}
+h1
+    {
+    font-family: Amsterdam Graffiti;
+    font-size: 75px;
+    }
+.logo
+{
+	float: left;
+	height: 150px;
+	width: 150px;
+}
+header
+    {
+    	background-image: linear-gradient(white, black);
+    }
+.recherche
+{
+	    background-image: url("materiel_ski.jpg");
+
+}
+h2
+{
+    font-family: Amsterdam Graffiti;
+    font-size: 55px;
+    }
+
+section
+{
+	background-image: url(../medias/extreme_snowboarding.jpg);
+}
+#meteo {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    z-index: 2;
+    float: right;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.onglets {
+    border: 3px solid black;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    display: inline block;
+   
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSCRIPTION</title>
+    <link rel="stylesheet" href="inscription.css" />
+</head>
+<body>
+    <header id="header">
+            <img src="../medias/logo.png" alt="logo" class="logo">
+            <h1>mountain's monsters</h1>
+                <img src="../medias/cloud_snow.png" alt="meteo" id="meteo">
+        </header>
+            <section id="page"><h2>CREER TON MONSTER PROFIL</h2>
+                <article id="inscription">
+            
+                    <form method="post" action="traitement.php">
+                        <div id="form">
+                            <p>
+                                <label for="nom">Nom</label><input type="text" name="Nom" id="nom" placeholder="Nom" autofocus required/>
+                            </p>
+                            <p>
+                                <label for="prenom">Prenom</label><input type="text" name="prenom" id="prenom" placeholder="Prenom" required/>
+                            </p>
+                            <p>
+                                <label for="pseudo">Pseudo</label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" maxlength="15" required />
+                            </p>
+                            <p>
+                                <label for="sexe">Sexe</label>
+                                    <select name="sexe" id="sexe">
+                                        <option value="homme">Homme</option>
+                                            <option value="femme">Femme</option>
+                                    </select>
+                            </p>
+                            <p>
+                                <label>Date de naissance</label><input type="date" name="date de naissance" id="date" required/>
+                            </p>
+                            <p>
+                                <label for="discipline.h">Discipline Hiver</label>
+                                    <select name="discipline.h" id="discipline.h">
+                                        <option value="ski">Ski Alpin</option>
+                                        <option value="snowboard">Snowboard</option>
+                                        <option value="ski de randonnée">Ski de randonnée</option>
+                                        <option value="ski nordique">Ski Nordique</option>
+                                        <option value="snow scoot">Snow Scoot</option>
+                                        <option value="raquettes">Raquettes</option>
+                                        <option value="luge">Luge</option>
+                                        <option value="monoski">Monoski</option>
+                                        <option value="speed riding">Speed Riding</option>
+                                        <option value="telemark">Télémark</option>
+                                    </select>
+                            </p>
+                            <p>
+                                <label for="discipline.ete">Discipline Hiver</label>
+                                    <select name="discipline.ete" id="discipline.ete">
+                                        <option value="randonnee">Randonnée</option>
+                                        <option value="trail">Trail</option>
+                                        <option value="parapente">Parapente</option>
+                                        <option value="via ferrata">Via Ferrata</option>
+                                        <option value="delta plane">Delta Plane</option>
+                                        <option value="wing suit">Wing Suit</option>
+                                        <option value="canyoning">Canyoning</option>
+                                        <option value="rafting">Rafting</option>
+                                        <option value="VTT">VTT</option>
+                                        <option value="wake board">Wake Board</option>
+                    
+                                    </select>
+                            </p>
+                            
+                            <p>
+                                <label>Adresse Mail</label><input type="email" name="Mail" id="mail" placeholder="Adresse mail" required />
+                            </p>
+                            <p>
+                                <label>Mot de Passe</label><input type="password" name="mot de Passe" id="pasword" placeholder="Mot de Passe" required />
+                            </p>
+                        </div>
+                    <div id="photo_pro">
+                                
+                        <p class="parcourir">
+                            <label for="photo_profil">Choisissez votre photo de profil</label><br/>
+                                <input type="file" name="photo_profil" id="photo_profil" >
+                        </p>
+                        
+                    </div>       
+                        <input type="checkbox" name="conditions" id="conditions" required />
+                            <label for="conditions">Cochez pour valider les <a href="conditions_utilisation">conditions générales d'utilisation</a></label>
+                        <p>
+                            <input type="submit" value="Let's Ride">
+                        </p>
+                    </form>
+                </article>
+            </section>
+       <footer id="footer">
+                <nav>
+                    <ul id="menu_nav">
+                        <li><a href="#LaTeamDeveloppeurs">La Team Développeurs</a></li>
+                        <li><a href="#ConditionDutilisation">Conditions d'Utilisation</a></li>
+                        <li><a href="#Aide">Aide</a></li>
+                        <li><a href="#CoVoiturage">Co-Voiturage</a></li>
+                        <li><a href="#GlissTroc">Gliss-Troc</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#APropos">A Propos</a></li>
+                    </ul>
+                    </nav>
+            </footer>
+</body>
+</html>

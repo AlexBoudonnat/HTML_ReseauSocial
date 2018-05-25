@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="formulaire2.css"/>
+    <title>Recherche de matos</title>
+  </head>
+    <body>
+      <form action="traitement.php" method="post">
+      <header>
+        <h1>Que recherchez-vous ?</h1>
+       </header> 
+       <div class="recherche">
+        <p>
+           <label for="categories">Catégorie</label><br />
+           <select name="categories" id="categories">
+               <option value="ski alpin ou de descente" selected="">ski alpin ou de descente</option>
+               <option value="snowboard">snowboard</option>
+               <option value="télémark">télémark</option>
+               <option value="snowscoot">snowscoot</option>
+               <option value="patinettes snowblades">patinettes snowblades</option>
+               <option value="ski de fond">ski de fond</option>
+               <option value="airboard">airboard</option>
+               <option value="saut à ski">saut à ski</option>
+               <option value="Ski acrobatique">Ski acrobatique</option>
+           </select>
+           </p>
+           <p>
+           <label for="Type d'équipement">Type d'équipement</label><br />
+           <select name="Type d'équipement" id="Type d'équipement">
+               <option value="skis tout-terrain">Skis tout-terrain</option>
+               <option value="skis Freestyles">Skis Freestyles</option>
+               <option value="skis free-ride">Skis free-ride</option>
+               <option value="skis alpins">Skis alpins</option>
+               <option value="skis spéciaux pour débutants">Skis spéciaux pour débutants</option>
+               <option value="planche large et courte freestyle">Planches freestyle</option>
+               <option value="planche free-ride">Planches free-ride</option>
+               <option value="snowboard de poudreuse">Snowboard de poudreuse</option>
+               <option value="snowboard alpin">Snowboard alpin</option>
+               <option value="chaussures de ski">Chaussures de ski</option>
+               <option value="Les casques">Les casques</option>
+               <option value="Parka">Parka</option>
+               <option value="Pantalons">Pantalons</option>
+               <option value="Polaires">Polaires</option>
+               <option value="Bonnets">Bonnets</option>
+               <option value="Gants">Gants</option>
+               <option value="Equipement High Tech">Equipement High Tech</option>
+          </select>
+           </p>
+          <p><label for="Département">Département</label><br />
+              <select name="Département" id="Département">
+               <option value="Ain (01)">Ain (01)</option>
+               <option value="Allier (03)">Allier (03)</option>
+               <option value="Ardèche (07">Ardèche (07</option>
+               <option value="Cantal (15)">Cantal (15)</option>
+               <option value="Drôme (26)">Drôme (26)</option>
+               <option value="Isère (38)">Isère (38)</option>
+               <option value="Loire (42)">Loire (42)</option>
+               <option value="Haute-Loire (43)">Haute-Loire (43)</option>
+               <option value="Puy-de-Dôme (63)">Puy-de-Dôme (63)</option>
+               <option value="Rhône (69)">Rhône (69)</option>
+               <option value="Savoie (73">Savoie (73</option>
+               <option value="Haute-Savoie (74)">Haute-Savoie (74)</option>
+          </select>
+           </p>
+           <p>
+            Annonces urgentes uniquement 
+            <input type="checkbox" id="Annonces urgentes uniquement" /> 
+           </p>
+
+          <p>
+            Prix maximum
+            <input type="range" min="0" max="1000"/>
+          </p>
+           
+          <p>
+             <input type="submit" value="Rechercher"/>
+          </p>
+          
+
+            </div>
+          </form>
+
+             
+            
+
+
+           
+
+   </body>
+   </html>

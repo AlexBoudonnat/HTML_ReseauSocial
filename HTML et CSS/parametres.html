@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="le meilleur réseau pour partager la montagne">
+    <meta name="robot" content="index, follow">
+    <link rel="stylesheet" href="parametres.css" />
+       <title>parametres</title>   
+  </head>
+    <body>
+      <header>
+        <div>
+          <img src="../medias/logo.png" alt="logo" id="logo"/>
+        </div>
+        <div>
+          <h1>Mountain's Monsters</h1>
+        </div>
+        <div>
+          <img src="../medias/vince_ski.jpg" alt="photo_id" id="photo" />
+        </div>
+        <div>
+          <img src="../medias/cloud_snow.png" alt="meteo" id="meteo">
+        </div>
+        </header>
+          <nav>
+            <span class="onglets">
+              <a href="mur.html">mur</a> 
+            </span>
+            <span class="onglets">
+              <a href="recherche.html">recherche</a>
+            </span>
+            <span class="onglets">
+              <a href="profil.html">profil</a>
+            </span>
+            <span class="onglets">
+              <a href="message">message</a>
+            </span>
+            <span class="onglets">
+              <a href="invitations">invitations</a>
+            </span>
+            <span class="onglets">
+              <a href="paramètres">paramètres</a>
+            </span>
+            <span class="onglets">
+              <a href="évènements">évènements</a>
+            </span>
+            <span class="onglets">
+              <a href="troc_matos">troc matos</a>
+            </span>
+            <span class="onglets">
+              <a href="déconnexion">déconnexion</a>
+            </span>
+          </nav>
+      <div id="visible">
+      <section>
+        <aside id="suggestion_d_amis">
+          <h3>Suggestion d'amis</h3>
+          <div>
+          <img src="../medias/beardski_1.jpg" alt="photo_membre" id="beardski_1" />
+          </div>
+        <div>
+          <img src="../medias/beardski_2.jpg" alt="photo_membre" id="beardski_2" />
+        </div>
+        <div>
+          <img src="../medias/visage_vtt.png" alt="photo_membre" id="visage_vtt" />
+        </div>
+        </aside>
+          <article id="formulaire"> 
+            <h2>Paramètres du compte</h2>
+          <form method="post" action="traitement.PHP">
+            <label for="Prénom">Prénom :</label> 
+            <input type="text" name="Prénom" placeholder="ex: Julien" id="Prénom" maxlength="30"><br>
+            <label for="Nom">Nom :</label> 
+            <input type="text" name="Nom" placeholder="ex: Dupond" id="Nom" maxlength="30"><br>
+            <label for="pseudo">Pseudo :</label> 
+            <input type="text" name="pseudo" placeholder="ex: tatiflette74" id="pseudo" maxlength="30"><br>
+            <label for="email">Email :</label> 
+            <input type="email" name="email" placeholder="ex: surfeur@gmail.com" id="email" maxlength="30"><br>                         
+            <label for="date_de_naissance">Date de naissance :</label> 
+            <input type="text" name="date_de_naissance" placeholder="ex: 24 mai 1980" id="date_de_naissance" maxlength="30"><br>                              
+            <label for="mot_de_passe">Mot de passe :</label> 
+            <input type="password" name="pass" placeholder="ex: FGvj45Sq" id="mot_de_passe" maxlength="30"><br>                            
+            <label for="langue">Langue :</label> 
+            <input type="text" name="langue" placeholder="ex: français" id="langue" maxlength="30"><br>
+            <p></p>               
+            <label for="confidentialité">Confidentialité :</label>                               
+            <select name="confidentialité" id="confidentialité">
+               <option value="profil_rider_public">"profil rider public"</option>
+               <option value="profil_rider_privé">"profil rider privé"</option>                      
+           </select><br>
+           <input type="submit" value="enregistrer" id="enregistrer">                                                      
+          </form>
+          </article>
+          <aside id="tweets">
+            <h3>Derniers Tweets de Digital Grenoble</h3>
+            <div>
+              <img src="../medias/tweet_macron.jpg" alt="tweet" id="tweet" />
+            </div>
+          </aside>
+         </section>
+         <section>
+           <nav id="abcde">
+                <h4>Annuaire des membres :</h4>
+            <ul id="liste">
+               <li><a href="A.html">A.</a></li>
+               <li><a href="B.html">B.</a></li>
+               <li><a href="C.html">C.</a></li>
+               <li><a href="D.html">D.</a></li>
+               <li><a href="E.html">E.</a></li>
+               <li><a href="F.html">F.</a></li>
+               <li><a href="G.html">G.</a></li>
+               <li><a href="H.html">H.</a></li>
+               <li><a href="I.html">I.</a></li>
+               <li><a href="J.html">J.</a></li>
+               <li><a href="K.html">K.</a></li>
+               <li><a href="L.html">L.</a></li>
+               <li><a href="M.html">M.</a></li>
+               <li><a href="N.html">N.</a></li>
+               <li><a href="O.html">O.</a></li>
+               <li><a href="P.html">P.</a></li>
+               <li><a href="Q.html">Q.</a></li>
+               <li><a href="R.html">R.</a></li>
+               <li><a href="S.html">S.</a></li>
+               <li><a href="T.html">T.</a></li>
+               <li><a href="U.html">U.</a></li>
+               <li><a href="V.html">V.</a></li>
+               <li><a href="W.html">W.</a></li>
+               <li><a href="X.html">X.</a></li>
+               <li><a href="Y.html">Y.</a></li>
+               <li><a href="Z.html">Z</a></li>
+            </ul>
+          </nav>
+         </section> 
+       </div>
+       <footer id="footer">
+        <nav>
+            <ul id="menu_nav">
+              <li><a href="#LaTeamDeveloppeurs">La Team Développeurs</a></li>
+              <li><a href="#ConditionDutilisation">Conditions d'Utilisation</a></li>
+              <li><a href="#Aide">Aide</a></li>
+              <li><a href="#CoVoiturage">Co-Voiturage</a></li>
+              <li><a href="#GlissTroc">Gliss-Troc</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#APropos">A Propos</a></li>
+            </ul>
+          </nav>
+    </footer>
+    </body>
+</html>
+
+
+    	

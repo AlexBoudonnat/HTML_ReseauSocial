@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="acceuil.css" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mountain's Monsters</title>
+
+    <style>
+        section{
+        /*Remove below line to make bgimage NOT fixed*/
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        /*Use center center in place of 300 200 to center bg image*/
+        background-position: 300 200;
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+
+        //Images de fond à slider
+        var bgslides = new Array();
+        bgslides[0] = "bgslide.jpg";
+        bgslides[1] = "bgslide2.jpg";
+        bgslides[2] = "bgslide3.jpg";
+
+        //Intervalle entre les slide (en miliseconds)
+        var speed = 3000;
+
+        //Preload images
+        var processed = new Array();
+
+        for (i=0;i<bgslides.length;i++) {
+            processed[i] = new Image();
+            processed[i].src = bgslides[i];
+        }
+
+        var inc = -1;
+
+        function slideback() {
+            if (inc<bgslides.length-1) {
+                inc++;
+            }
+            else {
+                inc=0;
+                document.getElementById("inscription").background = inc.src;
+            }
+        }
+
+
+    if (document.all||document.getElementById) {
+        window.onload=new Function('setInterval("slideback()", speed)');
+        console.log("test");
+    }
+  
+
+
+    </script>
+
+</head>
+
+<body id="bloc_page">
+    <header id="header">
+        <img src="../medias/logo.png" alt="logo" id="logo">
+        <h1>mountain's Monsters</h1>
+        <img src="../medias/cloud_snow.png" alt="meteo" id="meteo">
+    </header>
+
+    <section id="inscription">
+
+        <article id="inscription_module">
+            <h2>INSCRIPTION</h2>
+            <form method="post" action="inscription.html">
+                <div id="float_nom">
+                    <p>
+                        <label for="nom">Nom</label>
+                        <br>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" maxlength="15" />
+                    </p>
+                </div>
+                <div id="float_prenom">
+                    <p>
+                        <label for="prenom">Prénom</label>
+                        <br>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" maxlength="15" />
+                    </p>
+                </div>
+                <p>
+                    <label for="mail">Adresse mail</label>
+                    <br>
+                    <input type="email" name="mail" id="mail" size="45" placeholder="Adresse mail" maxlength="40">
+                </p>
+                <p>
+                    <label for="mot_de_passe1">Choisir un mot de passe</label>
+                    <br>
+                    <input type="password" name="mot_de_passe1" id="mot_de_passe1" size="45" placeholder="Mot de passe (10 caractères max.)"
+                        maxlength="10">
+                </p>
+                <p>
+                    <label for="birthday">Date de naissance</label>
+                    <br>
+                    <input type="date" name="birthday" id="birthday" />
+                </p>
+                <div id="sex_option">
+                    <input type="radio" name="sex" value="femme" id="femme" />
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="sex" value="homme" id="homme" />
+                    <label for="homme">Homme</label>
+                </div>
+                <br>
+                <div id="bouton_inscription">
+                    <input type="submit" value="Creer un compte" style="height:50px" id="bouton_1" />
+                </div>
+            </form>
+        </article>
+        <article id="bouton_inscription_tablette">
+            <form method="post" action="inscription.html">
+                <div id="inscription_tablette">
+                    <p>
+                        <label for="inscription_tablette">Pas encore inscrit !!!
+                            <br /> Alors fous ta cagoule
+                            <br />et rejoins-nous</label>
+                        <br>
+                        <input type="submit" value="Inscrition" style="height:50px" id="bouton_2" />
+                    </p>
+                </div>
+            </form>
+        </article>
+
+        <article id="connexion_module">
+            <h2>CONNEXION</h2>
+            <form method="post" action="parametres.html">
+                <p>
+                    <label for="identifiant">Identifiant</label>
+                    <br>
+                    <input type="text" name="identifiant" id="identifiant" placeholder="ID" maxlength="10" />
+                </p>
+                <p>
+                    <label for="mot_de_passe2">Mot de passe</label>
+                    <br>
+                    <input type="password" name="mot_de_passe2" id="mot_de_passe2" placeholder="Password" maxlength="10" />
+                </p>
+                <br>
+                <div id="bouton_connexion">
+                    <input type="submit" value="Connexion" id="bouton" />
+                </div>
+            </form>
+        </article>
+
+    </section>
+
+    <footer id="footer">
+        <nav>
+            <ul id="menu_nav">
+                <li>
+                    <a href="#LaTeamDeveloppeurs ">La Team Développeurs</a>
+                </li>
+                <li>
+                    <a href="#ConditionDutilisation ">Conditions d'Utilisation</a>
+                </li>
+                <li>
+                    <a href="#CoVoiturage">Co-Voiturage</a>
+                </li>
+                <li>
+                    <a href="#Rechercher">Rechercher</a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul id="menu_nav">
+                <li>
+                    <a href="#GlissTroc">Gliss-Troc</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#Aide ">Aide</a>
+                </li>
+                <li>
+                    <a href="#APropos">A Propos</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
